@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.main-header {
+  background-color: #b30000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left, .header-center, .header-right {
+  flex: 1;
+  text-align: center;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-right img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.header-center h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.header-center p {
+  font-size: 1em;
+}
+
+.phone {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn.black {
+  background-color: #000;
+  color: white;
+}
+
+.btn.red {
+  background-color: #b30000;
+  color: white;
+}
+
+.intro {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.services-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-btn {
+  background-color: #b30000;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #b30000;
+}
