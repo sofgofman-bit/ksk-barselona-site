@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+   flex-wrap: wrap;
 }
 
 .header-left, .header-center, .header-right {
@@ -68,6 +69,13 @@ body {
 .btn.black {
   background-color: #000;
   color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
 }
 
 .btn.red {
@@ -112,3 +120,66 @@ footer {
 footer a {
   color: #b30000;
 }
+
+.service-btn:hover, .btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.services-buttons, .about {
+  background-color: #fff5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(179,0,0,0.1);
+  padding: 20px;
+}
+
+.btn {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.header-right img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .header-left,
+  .header-center,
+  .header-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .header-left .btn.black {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .header-left .phone {
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+
+  .header-right img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
