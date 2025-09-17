@@ -184,15 +184,15 @@ footer a {
 
 .map-section {
   padding: 40px 20px;
-  text-align: center;        /* центрируем текст и кнопку */
+  text-align: center;        
   background-color: #fff5f5;
   border-radius: 10px;
   margin-bottom: 40px;
   box-shadow: 0 0 10px rgba(179, 0, 0, 0.1);
 
-  display: flex;             /* делаем flex-контейнер */
-  flex-direction: column;    /* элементы сверху вниз */
-  align-items: center;       /* центрируем элементы по горизонтали */
+  display: flex;             
+  flex-direction: column;    
+  align-items: center;       
 }
 
 .map-section h2 {
@@ -203,5 +203,40 @@ footer a {
 
 .map-section .btn.black {
   display: inline-block;
-  margin: 0 auto;            /* дополнительное центрирование */
+  margin: 0 auto;            
+}
+.horses-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.horses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.horse-card {
+  width: 300px;
+  text-align: center;
+}
+
+.horse-card img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.horse-card p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
 }
