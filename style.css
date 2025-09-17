@@ -209,6 +209,10 @@ footer a {
   text-align: center;
   padding: 30px;
 }
+.horses-section {
+  text-align: center;
+  padding: 30px;
+}
 
 .horses-grid {
   display: flex;
@@ -216,7 +220,7 @@ footer a {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  max-width: 1000px;
+  max-width: 960px; /* ровно 3 по 300 + отступы */
   margin: 0 auto;
 }
 
@@ -230,13 +234,34 @@ footer a {
   height: 320px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .horse-card p {
   margin-top: 8px;
   font-weight: bold;
   color: #333;
+}
+@media screen and (max-width: 1000px) {
+  .horses-grid {
+    max-width: 640px; /* 2 по 300 + отступ */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .horses-grid {
+    max-width: 320px; /* 1 фото */
+  }
+
+  .horse-card {
+    width: 100%;
+  }
+
+  .horse-card img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+  }
 }
